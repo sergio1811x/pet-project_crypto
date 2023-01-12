@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/pet-project_crypto/static/css/main.0adbcb8c.css",
-    "main.js": "/pet-project_crypto/static/js/main.d28f5098.js",
+    "main.js": "/pet-project_crypto/static/js/main.da777e5c.js",
     "static/media/cryptocurrency.png": "/pet-project_crypto/static/media/cryptocurrency.1548aced3f0605895bac.png",
     "index.html": "/pet-project_crypto/index.html",
     "main.0adbcb8c.css.map": "/pet-project_crypto/static/css/main.0adbcb8c.css.map",
-    "main.d28f5098.js.map": "/pet-project_crypto/static/js/main.d28f5098.js.map"
+    "main.da777e5c.js.map": "/pet-project_crypto/static/js/main.da777e5c.js.map"
   },
   "entrypoints": [
     "static/css/main.0adbcb8c.css",
-    "static/js/main.d28f5098.js"
+    "static/js/main.da777e5c.js"
   ]
 }
