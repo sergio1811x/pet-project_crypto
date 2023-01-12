@@ -13,7 +13,7 @@ const HomePage = () => {
   if (isFetching) return <div>"Loading . . ."</div>;
   return (
     <>
-      <Typography.Title style={{color:'#51545a'}} level={2} className="heading">
+      <Typography.Title style={{ color: '#51545a' }} level={2} className="heading">
         Global Crypto Stats
       </Typography.Title>
       <Row>
@@ -34,19 +34,19 @@ const HomePage = () => {
         </Col>
       </Row>
       <div className="home-heading-container">
-        <Title style={{color:'#51545a'}} level={2} className="home-title">
+        <Title style={{ color: '#51545a' }} level={2} className="home-title">
           Top 10 Cryptocurrencies
         </Title>
-        <Title  level={3} className="show-more">
+        <Title level={3} className="show-more">
           <Link to="/cryptocurrencies">Show More</Link>
         </Title>
       </div>
       <Cryptocurrencies simplified={true} />
       <div className="home-heading-container">
-        <Title style={{color:'#51545a'}} level={2} className="home-title">
+        <Title style={{ color: '#51545a' }} level={2} className="home-title">
           Crypto News
         </Title>
-        <Title  level={3} className="show-more">
+        <Title level={3} className="show-more">
           <Link to="/news">Show More</Link>
         </Title>
       </div>

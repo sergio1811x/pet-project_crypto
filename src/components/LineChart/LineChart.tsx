@@ -1,7 +1,7 @@
-import { Col, Row } from "antd";
-import Typography from "antd/lib/typography";
-import React from "react";
-import { Line } from "react-chartjs-2";
+import { Col, Row } from 'antd';
+import Typography from 'antd/lib/typography';
+import React from 'react';
+import { Line } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -11,17 +11,9 @@ import {
   Title,
   Tooltip,
   Legend,
-} from "chart.js";
+} from 'chart.js';
 
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend
-);
+ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
 interface ILineChart {
   coinHistory: any;
@@ -36,9 +28,7 @@ const LineChart = (props: ILineChart) => {
   for (let i = props.coinHistory?.data?.history?.length - 1; i > 0; i--) {
     coinPrice.push(props.coinHistory?.data?.history[i].price);
     coinTimeStamp.push(
-      new Date(
-        props.coinHistory?.data?.history[i].timestamp * 1000
-      ).toLocaleDateString()
+      new Date(props.coinHistory?.data?.history[i].timestamp * 1000).toLocaleDateString(),
     );
   }
 
@@ -46,11 +36,11 @@ const LineChart = (props: ILineChart) => {
     labels: coinTimeStamp,
     datasets: [
       {
-        label: "Price In USD",
+        label: 'Price In USD',
         data: coinPrice,
         fill: false,
-        backgroundColor: "#0071bd",
-        borderColor: "#0071bd",
+        backgroundColor: '#0071bd',
+        borderColor: '#0071bd',
       },
     ],
   };
