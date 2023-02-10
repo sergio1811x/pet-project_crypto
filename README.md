@@ -1,4 +1,4 @@
-###  https://sergio1811x.github.io/pet-project_crypto/
+###  https://sergio1811x.github.io/project_crypto/
 
 npm install - установка зависимостей
 
